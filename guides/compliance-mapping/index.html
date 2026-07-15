@@ -1,0 +1,5197 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.logystera.com/guides/compliance-mapping/">
+      
+      
+        <link rel="prev" href="../../alerts/wp/wp_cron_overdue/">
+      
+      
+        <link rel="next" href="../../about/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Compliance Control Mapping - Logystera Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../styles/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+<meta property="og:site_name" content="Logystera Documentation">
+<meta name="theme-color" content="#2374ff">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#compliance-control-mapping-cms-audit-logs-to-soc-2-nist-800-53-and-hipaa" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Logystera Documentation" class="md-header__button md-logo" aria-label="Logystera Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Logystera Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Compliance Control Mapping
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="cyan"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="cyan"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Logystera Documentation" class="md-nav__button md-logo" aria-label="Logystera Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Logystera Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../philosophy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Philosophy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logystera App
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Logystera App
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../app/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../app/entities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../app/dashboards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../app/alerts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alerts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../app/account/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Account & Team
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Integrations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HashiCorp Vault
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    HashiCorp Vault
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agent/install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agent/install-docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Install via Docker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agent/config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agent/ci-cd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CI/CD & Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agent/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WordPress
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    WordPress
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wordpress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wordpress/features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wordpress/install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wordpress/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wordpress/admin-ui/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Admin Panel Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wordpress/signals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Signals Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_7" id="__nav_4_2_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboards
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dashboards
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wordpress/dashboards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wordpress/dashboards/site-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Site Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wordpress/dashboards/incidents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Incidents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wordpress/dashboards/performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Performance & Latency
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wordpress/dashboards/traffic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Traffic Intelligence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wordpress/dashboards/admin-auth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Admin & Auth
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wordpress/dashboards/change-drift/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Change & Drift
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wordpress/dashboards/email/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Email Analytics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wordpress/dashboards/plugin-impact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugin Impact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wordpress/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alert Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Alert Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WordPress
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    WordPress
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alerts/wp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1_2" id="__nav_5_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Security
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alerts/wp/wp_brute_force_login/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    wp_brute_force_login
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alerts/wp/wp_admin_role_granted/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    wp_admin_role_granted
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alerts/wp/wp_new_admin_user/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    wp_new_admin_user
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alerts/wp/wp_critical_file_modified/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    wp_critical_file_modified
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alerts/wp/wp_upload_blocked/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    wp_upload_blocked
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alerts/wp/wp_login_spike/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    wp_login_spike
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1_3" id="__nav_5_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PHP & Application
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    PHP & Application
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alerts/wp/wp_php_fatal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    wp_php_fatal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alerts/wp/wp_php_warning_spike/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    wp_php_warning_spike
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1_4" id="__nav_5_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database & Infrastructure
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Database & Infrastructure
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alerts/wp/wp_db_connection_failed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    wp_db_connection_failed
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alerts/wp/wp_db_table_crashed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    wp_db_table_crashed
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alerts/wp/wp_memory_near_limit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    wp_memory_near_limit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_1_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1_5" id="__nav_5_1_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Email
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Email
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alerts/wp/wp_email_delivery_failed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    wp_email_delivery_failed
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_1_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1_6" id="__nav_5_1_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Performance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Performance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alerts/wp/wp_slow_page_load/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    wp_slow_page_load
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alerts/wp/wp_slow_queries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    wp_slow_queries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alerts/wp/wp_sustained_slowness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    wp_sustained_slowness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_1_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1_7" id="__nav_5_1_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WordPress State & Cron
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    WordPress State & Cron
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alerts/wp/wp_plugin_state_change/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    wp_plugin_state_change
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alerts/wp/wp_theme_switched/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    wp_theme_switched
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alerts/wp/wp_missed_scheduled_post/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    wp_missed_scheduled_post
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alerts/wp/wp_cron_overdue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    wp_cron_overdue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Compliance Control Mapping
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Compliance Control Mapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#soc-2-trust-service-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SOC 2 Trust Service Criteria
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SOC 2 Trust Service Criteria">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cc6-logical-and-physical-access-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC6 — Logical and Physical Access Controls
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CC6 — Logical and Physical Access Controls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cc61-logical-access-security-for-protected-information-assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC6.1 — Logical Access Security for Protected Information Assets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cc62-prior-to-issuing-system-credentials-registration-and-authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC6.2 — Prior to Issuing System Credentials, Registration and Authorization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cc63-authorization-modification-or-removal-of-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC6.3 — Authorization, Modification, or Removal of Access
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cc66-restricting-access-from-outside-system-boundaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC6.6 — Restricting Access from Outside System Boundaries
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cc68-prevention-or-detection-of-unauthorized-or-malicious-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC6.8 — Prevention or Detection of Unauthorized or Malicious Software
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cc7-system-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC7 — System Operations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CC7 — System Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cc71-detection-and-monitoring-to-meet-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC7.1 — Detection and Monitoring to Meet Objectives
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cc72-monitoring-system-components-for-anomalies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC7.2 — Monitoring System Components for Anomalies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cc73-evaluation-of-security-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC7.3 — Evaluation of Security Events
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cc74-incident-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC7.4 — Incident Response
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cc8-change-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC8 — Change Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CC8 — Change Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cc81-changes-to-infrastructure-data-software-and-procedures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC8.1 — Changes to Infrastructure, Data, Software, and Procedures
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nist-800-53-rev-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NIST 800-53 Rev. 5
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="NIST 800-53 Rev. 5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ac-access-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AC — Access Control
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AC — Access Control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ac-2-account-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AC-2 — Account Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ac-6-least-privilege" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AC-6 — Least Privilege
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ac-7-unsuccessful-logon-attempts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AC-7 — Unsuccessful Logon Attempts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#au-audit-and-accountability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AU — Audit and Accountability
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AU — Audit and Accountability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#au-2-event-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AU-2 — Event Logging
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#au-3-content-of-audit-records" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AU-3 — Content of Audit Records
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#au-6-audit-record-review-analysis-and-reporting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AU-6 — Audit Record Review, Analysis, and Reporting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#au-12-audit-record-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AU-12 — Audit Record Generation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cm-configuration-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CM — Configuration Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CM — Configuration Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cm-3-configuration-change-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CM-3 — Configuration Change Control
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cm-6-configuration-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CM-6 — Configuration Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#si-system-and-information-integrity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SI — System and Information Integrity
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SI — System and Information Integrity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#si-4-system-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SI-4 — System Monitoring
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#si-7-software-firmware-and-information-integrity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SI-7 — Software, Firmware, and Information Integrity
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hipaa-technical-safeguards-45-cfr-164312" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HIPAA Technical Safeguards (45 CFR 164.312)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HIPAA Technical Safeguards (45 CFR 164.312)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#164312a1-access-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        164.312(a)(1) — Access Control
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="164.312(a)(1) — Access Control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a2i-unique-user-identification-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (a)(2)(i) — Unique User Identification (Required)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a2iii-automatic-logoff-addressable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (a)(2)(iii) — Automatic Logoff (Addressable)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a2iv-encryption-and-decryption-addressable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (a)(2)(iv) — Encryption and Decryption (Addressable)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#164312b-audit-controls-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        164.312(b) — Audit Controls (Required)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#164312c1-integrity-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        164.312(c)(1) — Integrity (Required)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="164.312(c)(1) — Integrity (Required)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c2-mechanism-to-authenticate-electronic-protected-health-information-addressable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (c)(2) — Mechanism to Authenticate Electronic Protected Health Information (Addressable)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#164312d-person-or-entity-authentication-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        164.312(d) — Person or Entity Authentication (Required)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cross-framework-summary-signals-by-compliance-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cross-Framework Summary: Signals by Compliance Value
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gaps-and-complementary-evidence-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gaps and Complementary Evidence Sources
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implementation Checklist
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implementation Checklist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wordpress-plugin-minimum-for-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WordPress Plugin — Minimum for Compliance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drupal-module-minimum-for-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drupal Module — Minimum for Compliance
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#soc-2-trust-service-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SOC 2 Trust Service Criteria
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SOC 2 Trust Service Criteria">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cc6-logical-and-physical-access-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC6 — Logical and Physical Access Controls
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CC6 — Logical and Physical Access Controls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cc61-logical-access-security-for-protected-information-assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC6.1 — Logical Access Security for Protected Information Assets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cc62-prior-to-issuing-system-credentials-registration-and-authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC6.2 — Prior to Issuing System Credentials, Registration and Authorization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cc63-authorization-modification-or-removal-of-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC6.3 — Authorization, Modification, or Removal of Access
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cc66-restricting-access-from-outside-system-boundaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC6.6 — Restricting Access from Outside System Boundaries
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cc68-prevention-or-detection-of-unauthorized-or-malicious-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC6.8 — Prevention or Detection of Unauthorized or Malicious Software
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cc7-system-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC7 — System Operations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CC7 — System Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cc71-detection-and-monitoring-to-meet-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC7.1 — Detection and Monitoring to Meet Objectives
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cc72-monitoring-system-components-for-anomalies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC7.2 — Monitoring System Components for Anomalies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cc73-evaluation-of-security-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC7.3 — Evaluation of Security Events
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cc74-incident-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC7.4 — Incident Response
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cc8-change-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC8 — Change Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CC8 — Change Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cc81-changes-to-infrastructure-data-software-and-procedures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CC8.1 — Changes to Infrastructure, Data, Software, and Procedures
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nist-800-53-rev-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NIST 800-53 Rev. 5
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="NIST 800-53 Rev. 5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ac-access-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AC — Access Control
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AC — Access Control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ac-2-account-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AC-2 — Account Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ac-6-least-privilege" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AC-6 — Least Privilege
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ac-7-unsuccessful-logon-attempts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AC-7 — Unsuccessful Logon Attempts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#au-audit-and-accountability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AU — Audit and Accountability
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AU — Audit and Accountability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#au-2-event-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AU-2 — Event Logging
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#au-3-content-of-audit-records" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AU-3 — Content of Audit Records
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#au-6-audit-record-review-analysis-and-reporting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AU-6 — Audit Record Review, Analysis, and Reporting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#au-12-audit-record-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AU-12 — Audit Record Generation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cm-configuration-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CM — Configuration Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CM — Configuration Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cm-3-configuration-change-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CM-3 — Configuration Change Control
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cm-6-configuration-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CM-6 — Configuration Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#si-system-and-information-integrity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SI — System and Information Integrity
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SI — System and Information Integrity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#si-4-system-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SI-4 — System Monitoring
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#si-7-software-firmware-and-information-integrity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SI-7 — Software, Firmware, and Information Integrity
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hipaa-technical-safeguards-45-cfr-164312" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HIPAA Technical Safeguards (45 CFR 164.312)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HIPAA Technical Safeguards (45 CFR 164.312)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#164312a1-access-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        164.312(a)(1) — Access Control
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="164.312(a)(1) — Access Control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a2i-unique-user-identification-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (a)(2)(i) — Unique User Identification (Required)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a2iii-automatic-logoff-addressable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (a)(2)(iii) — Automatic Logoff (Addressable)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a2iv-encryption-and-decryption-addressable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (a)(2)(iv) — Encryption and Decryption (Addressable)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#164312b-audit-controls-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        164.312(b) — Audit Controls (Required)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#164312c1-integrity-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        164.312(c)(1) — Integrity (Required)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="164.312(c)(1) — Integrity (Required)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c2-mechanism-to-authenticate-electronic-protected-health-information-addressable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (c)(2) — Mechanism to Authenticate Electronic Protected Health Information (Addressable)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#164312d-person-or-entity-authentication-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        164.312(d) — Person or Entity Authentication (Required)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cross-framework-summary-signals-by-compliance-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cross-Framework Summary: Signals by Compliance Value
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gaps-and-complementary-evidence-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gaps and Complementary Evidence Sources
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implementation Checklist
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implementation Checklist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wordpress-plugin-minimum-for-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WordPress Plugin — Minimum for Compliance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drupal-module-minimum-for-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drupal Module — Minimum for Compliance
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="compliance-control-mapping-cms-audit-logs-to-soc-2-nist-800-53-and-hipaa">Compliance Control Mapping: CMS Audit Logs to SOC 2, NIST 800-53, and HIPAA</h1>
+<p>This document maps specific compliance controls to CMS-level audit log signals emitted by the Logystera WordPress plugin and Drupal module. It focuses on the controls where CMS audit logs provide direct, actionable evidence for auditors.</p>
+<p><strong>Scope.</strong> This mapping covers controls where CMS-level signals are the <em>primary</em> or <em>supporting</em> evidence source. Infrastructure-level controls (network segmentation, disk encryption, physical access) are out of scope — those are satisfied by cloud provider certifications and infrastructure configuration, not application-level logs.</p>
+<p><strong>Signal notation.</strong> Signals are written as <code>event_type</code> values. Where WordPress and Drupal use different signal names for the same concept, both are listed. "WP" = WordPress plugin, "D" = Drupal module.</p>
+<hr />
+<h2 id="soc-2-trust-service-criteria">SOC 2 Trust Service Criteria</h2>
+<h3 id="cc6-logical-and-physical-access-controls">CC6 — Logical and Physical Access Controls</h3>
+<h4 id="cc61-logical-access-security-for-protected-information-assets">CC6.1 — Logical Access Security for Protected Information Assets</h4>
+<p><strong>Control requirement.</strong> The entity implements logical access security software, infrastructure, and architectures over protected information assets to protect them from security events.</p>
+<p><strong>What auditors ask for:</strong></p>
+<ul>
+<li>Evidence of authentication mechanisms (MFA, password policies)</li>
+<li>Logs showing who accessed what and when</li>
+<li>Evidence of session management controls</li>
+</ul>
+<p><strong>CMS signals that satisfy this:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>CMS</th>
+<th>Evidence provided</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>auth.attempt</code> / <code>auth.login</code></td>
+<td>WP / D</td>
+<td>Every authentication event with success/failure, timestamp, IP address. Proves authentication controls are enforced and logged.</td>
+</tr>
+<tr>
+<td><code>auth.logout</code></td>
+<td>WP + D</td>
+<td>Session termination records. Proves session lifecycle is tracked.</td>
+</tr>
+<tr>
+<td><code>http.request</code></td>
+<td>WP + D</td>
+<td>Every authenticated request with actor ID, path, method, status code. Demonstrates access to protected resources is logged.</td>
+</tr>
+<tr>
+<td><code>rest.request</code> / <code>api.access</code></td>
+<td>WP / D</td>
+<td>API-level access with route, method, status, actor. Proves programmatic access is logged separately from UI access.</td>
+</tr>
+<tr>
+<td><code>access.denied</code></td>
+<td>D</td>
+<td>Explicit record of denied access attempts. Proves enforcement is active.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Auditor-ready narrative:</strong> "All authentication events (success and failure) are captured with timestamp, actor identifier, source IP, and outcome. Every authenticated HTTP request is logged with the actor, resource path, and response status. Failed access attempts are recorded separately. Logs are transmitted to a centralized platform within 15 minutes and retained for [retention period]."</p>
+<hr />
+<h4 id="cc62-prior-to-issuing-system-credentials-registration-and-authorization">CC6.2 — Prior to Issuing System Credentials, Registration and Authorization</h4>
+<p><strong>Control requirement.</strong> Prior to issuing system credentials and granting system access, the entity registers and authorizes new internal and external users whose access is administered by the entity.</p>
+<p><strong>What auditors ask for:</strong></p>
+<ul>
+<li>Evidence of user provisioning workflow (request, approval, creation)</li>
+<li>Timestamps showing when access was granted</li>
+<li>Evidence that access was authorized before credentials were issued</li>
+<li>Quarterly/semi-annual user access reviews</li>
+</ul>
+<p><strong>CMS signals that satisfy this:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>CMS</th>
+<th>Evidence provided</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>user.created</code></td>
+<td>D</td>
+<td>New account creation with actor (who created it), roles assigned, timestamp. Proves provisioning is tracked.</td>
+</tr>
+<tr>
+<td><code>user.role_changed</code></td>
+<td>D</td>
+<td>Role modifications with before/after state, actor who made the change. Proves privilege changes are logged.</td>
+</tr>
+<tr>
+<td><code>wp.state_change</code> (user-related)</td>
+<td>WP</td>
+<td>User lifecycle events within WordPress.</td>
+</tr>
+<tr>
+<td><code>config.save</code> (user.settings)</td>
+<td>D</td>
+<td>Changes to user-related configuration (registration settings, role permissions).</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Auditor-ready narrative:</strong> "User account creation is logged with the creating administrator's identity, timestamp, and initial role assignment. All subsequent role changes capture the before and after state, the administrator who authorized the change, and the timestamp. These logs support user access review by providing a complete provisioning trail."</p>
+<p><strong>Gap note:</strong> CMS signals capture <em>when</em> accounts are created and <em>who</em> created them, but the approval workflow (ticket, manager sign-off) typically lives outside the CMS. Logystera signals provide the <em>execution evidence</em>; pair with ticketing system exports for the <em>authorization evidence</em>.</p>
+<hr />
+<h4 id="cc63-authorization-modification-or-removal-of-access">CC6.3 — Authorization, Modification, or Removal of Access</h4>
+<p><strong>Control requirement.</strong> The entity authorizes, modifies, or removes access to data, software, functions, and other protected information assets based on roles, responsibilities, or the system design and changes, giving consideration to the concepts of least privilege and segregation of duties.</p>
+<p><strong>What auditors ask for:</strong></p>
+<ul>
+<li>Evidence of role-based access control implementation</li>
+<li>Logs showing access modifications with before/after states</li>
+<li>Evidence of timely deprovisioning (typically within 24 hours of termination)</li>
+<li>Periodic access review artifacts</li>
+</ul>
+<p><strong>CMS signals that satisfy this:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>CMS</th>
+<th>Evidence provided</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>user.role_changed</code></td>
+<td>D</td>
+<td>Complete before/after role diff with <code>roles_added</code> and <code>roles_removed</code> arrays. Direct evidence of RBAC modifications.</td>
+</tr>
+<tr>
+<td><code>user.blocked</code></td>
+<td>D</td>
+<td>Account deactivation with actor and timestamp. Proves timely deprovisioning.</td>
+</tr>
+<tr>
+<td><code>user.deleted</code></td>
+<td>D</td>
+<td>Account removal with actor and timestamp. Proves access termination.</td>
+</tr>
+<tr>
+<td><code>auth.login</code> (with roles)</td>
+<td>D</td>
+<td>Login events include current role list, providing point-in-time evidence of effective permissions.</td>
+</tr>
+<tr>
+<td><code>config.save</code> (user.role.*)</td>
+<td>D</td>
+<td>Changes to role definitions themselves (not just assignments).</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Auditor-ready narrative:</strong> "Role changes are logged with the complete before and after role set, including which roles were added and removed, the administrator who made the change, and the timestamp. Account deactivation and deletion events are captured with the same detail. Login events include the user's current role list, providing a point-in-time snapshot of effective permissions at each authentication."</p>
+<hr />
+<h4 id="cc66-restricting-access-from-outside-system-boundaries">CC6.6 — Restricting Access from Outside System Boundaries</h4>
+<p><strong>Control requirement.</strong> The entity implements logical access security measures to protect against threats from sources outside its system boundaries.</p>
+<p><strong>What auditors ask for:</strong></p>
+<ul>
+<li>Evidence of boundary protection (firewalls, WAF)</li>
+<li>Logs showing external access attempts and their outcomes</li>
+<li>Evidence of additional authentication for external access</li>
+</ul>
+<p><strong>CMS signals that satisfy this:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>CMS</th>
+<th>Evidence provided</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>auth.attempt</code> / <code>auth.login_failed</code></td>
+<td>WP / D</td>
+<td>Failed login attempts from external IPs. Volume and pattern data for brute-force detection.</td>
+</tr>
+<tr>
+<td><code>rest.request</code> / <code>api.access</code></td>
+<td>WP / D</td>
+<td>All API access with source IP, method, route, and status. Proves external API access is monitored.</td>
+</tr>
+<tr>
+<td><code>upload_blocked</code></td>
+<td>WP</td>
+<td>Blocked file uploads (dangerous extensions). Proves input validation at the boundary.</td>
+</tr>
+<tr>
+<td><code>http.request</code> (with IP)</td>
+<td>WP + D</td>
+<td>All HTTP requests with source IP. Baseline for identifying anomalous external access patterns.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="cc68-prevention-or-detection-of-unauthorized-or-malicious-software">CC6.8 — Prevention or Detection of Unauthorized or Malicious Software</h4>
+<p><strong>Control requirement.</strong> The entity implements controls to prevent or detect and act upon the introduction of unauthorized or malicious software.</p>
+<p><strong>What auditors ask for:</strong></p>
+<ul>
+<li>Evidence of malware/unauthorized software detection</li>
+<li>Logs showing blocked malicious uploads</li>
+<li>Software inventory and change tracking</li>
+</ul>
+<p><strong>CMS signals that satisfy this:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>CMS</th>
+<th>Evidence provided</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>wp.state_change</code> (plugin/theme)</td>
+<td>WP</td>
+<td>Plugin activation, deactivation, updates. Complete software change trail.</td>
+</tr>
+<tr>
+<td><code>module.install</code> / <code>module.uninstall</code></td>
+<td>D</td>
+<td>Module installation and removal with actor and sync flag.</td>
+</tr>
+<tr>
+<td><code>wp.environment</code> / <code>drupal.environment</code></td>
+<td>WP / D</td>
+<td>Periodic software inventory snapshot (installed plugins/modules, versions).</td>
+</tr>
+<tr>
+<td><code>upload_blocked</code></td>
+<td>WP</td>
+<td>Blocked uploads of executable file types (<code>.php</code>, <code>.exe</code>, etc.).</td>
+</tr>
+<tr>
+<td><code>wp.integrity</code></td>
+<td>WP</td>
+<td>File integrity monitoring of critical files (<code>wp-config.php</code>, <code>.htaccess</code>). Detects unauthorized modification.</td>
+</tr>
+<tr>
+<td><code>config.import</code></td>
+<td>D</td>
+<td>Configuration imports tracked with actor. Detects bulk configuration injection.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Auditor-ready narrative:</strong> "The CMS agent maintains a complete software inventory emitted every 15 minutes, including all installed plugins/modules and their versions. Every software change (installation, activation, deactivation, update, removal) is logged with the actor and timestamp. Critical file integrity is monitored hourly via hash comparison, and unauthorized file uploads are blocked and logged."</p>
+<hr />
+<h3 id="cc7-system-operations">CC7 — System Operations</h3>
+<h4 id="cc71-detection-and-monitoring-to-meet-objectives">CC7.1 — Detection and Monitoring to Meet Objectives</h4>
+<p><strong>Control requirement.</strong> To meet its objectives, the entity uses detection and monitoring procedures to identify changes to configurations that result in the introduction of new vulnerabilities, and susceptibilities to newly discovered vulnerabilities.</p>
+<p><strong>What auditors ask for:</strong></p>
+<ul>
+<li>Evidence of configuration change monitoring</li>
+<li>Logs showing configuration baseline and deviations</li>
+<li>Vulnerability scanning results (out of scope for CMS signals)</li>
+</ul>
+<p><strong>CMS signals that satisfy this:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>CMS</th>
+<th>Evidence provided</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>config.save</code> / <code>config.delete</code></td>
+<td>D</td>
+<td>Every configuration change with config object name, category, change type, actor. Complete configuration audit trail.</td>
+</tr>
+<tr>
+<td><code>config.import</code> / <code>config.export</code></td>
+<td>D</td>
+<td>Bulk configuration changes tracked with actor.</td>
+</tr>
+<tr>
+<td><code>wp.environment</code> / <code>drupal.environment</code></td>
+<td>WP / D</td>
+<td>Software version snapshot detects outdated/vulnerable components (processor can cross-reference with CVE databases).</td>
+</tr>
+<tr>
+<td><code>wp.integrity</code></td>
+<td>WP</td>
+<td>Critical file hash changes detected within 1 hour.</td>
+</tr>
+<tr>
+<td><code>wp.state_change</code> (core_updated, plugin_updated, theme_updated)</td>
+<td>WP</td>
+<td>All software updates tracked with timestamp.</td>
+</tr>
+<tr>
+<td><code>update.status</code></td>
+<td>D</td>
+<td>Drupal update availability status changes.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Auditor-ready narrative:</strong> "Every configuration change in the CMS is logged with the configuration object name, change type (create/update/delete), and the actor who made the change. Software inventory is captured periodically with version details, enabling detection of outdated components. Critical file integrity is monitored via hash comparison."</p>
+<hr />
+<h4 id="cc72-monitoring-system-components-for-anomalies">CC7.2 — Monitoring System Components for Anomalies</h4>
+<p><strong>Control requirement.</strong> The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives.</p>
+<p><strong>What auditors ask for:</strong></p>
+<ul>
+<li>Evidence of anomaly detection capabilities</li>
+<li>Alert configuration and thresholds</li>
+<li>Sample alerts triggered during the audit period</li>
+<li>Evidence that detection covers: unauthorized access, compromised credentials, unusual activity patterns</li>
+</ul>
+<p><strong>CMS signals that satisfy this:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>CMS</th>
+<th>Evidence provided</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>auth.attempt</code> / <code>auth.login_failed</code></td>
+<td>WP / D</td>
+<td>Failed authentication volume — processor derives brute-force detection metrics.</td>
+</tr>
+<tr>
+<td><code>http.request</code></td>
+<td>WP + D</td>
+<td>Request volume, error rate (4xx/5xx), admin area access frequency. Baseline for anomaly detection.</td>
+</tr>
+<tr>
+<td><code>php.warning</code> / <code>php.fatal</code> / <code>php.error</code></td>
+<td>WP / D</td>
+<td>Application error rate spikes indicate compromise or system degradation.</td>
+</tr>
+<tr>
+<td><code>db_error</code> / <code>db_deadlock</code> / <code>db_connection_failed</code></td>
+<td>WP</td>
+<td>Database-level anomalies indicating infrastructure issues or attack patterns.</td>
+</tr>
+<tr>
+<td><code>db.slow_query</code></td>
+<td>D</td>
+<td>Query performance anomalies indicating resource exhaustion or injection attempts.</td>
+</tr>
+<tr>
+<td><code>memory_near_limit</code></td>
+<td>WP</td>
+<td>Resource exhaustion approaching thresholds.</td>
+</tr>
+<tr>
+<td><code>cron.run</code> / <code>wp.cron</code></td>
+<td>WP</td>
+<td>Cron health and execution anomalies (missed schedules, errors during execution).</td>
+</tr>
+<tr>
+<td><code>perf.hook_timing</code></td>
+<td>WP</td>
+<td>Performance profiling detects anomalous execution patterns (potential cryptominers, resource abuse).</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Auditor-ready narrative:</strong> "The platform continuously monitors authentication patterns, HTTP traffic volume and error rates, application error frequency, database health, and resource utilization. Anomaly detection rules evaluate these signals against configurable thresholds. When thresholds are exceeded, alerts are generated and routed to the incident response team."</p>
+<hr />
+<h4 id="cc73-evaluation-of-security-events">CC7.3 — Evaluation of Security Events</h4>
+<p><strong>Control requirement.</strong> The entity evaluates security events to determine whether they could or have resulted in a failure of the entity to meet its objectives and, if so, takes actions to prevent or address such failures.</p>
+<p><strong>What auditors ask for:</strong></p>
+<ul>
+<li>Evidence that detected events are triaged and classified</li>
+<li>Escalation procedures for confirmed incidents</li>
+<li>Documentation showing event-to-incident workflow</li>
+</ul>
+<p><strong>CMS signals that satisfy this (as input to the triage process):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>CMS</th>
+<th>Evidence provided</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>All <code>auth.*</code> signals</td>
+<td>WP + D</td>
+<td>Authentication events feed into rule evaluation. The processor classifies patterns (e.g., 10 failed logins in 5 minutes from same IP = potential brute force).</td>
+</tr>
+<tr>
+<td><code>wp.integrity</code></td>
+<td>WP</td>
+<td>File integrity change = automatic high-severity event requiring investigation.</td>
+</tr>
+<tr>
+<td><code>upload_blocked</code></td>
+<td>WP</td>
+<td>Blocked malicious upload = automatic security event logged and evaluated.</td>
+</tr>
+<tr>
+<td><code>access.denied</code></td>
+<td>D</td>
+<td>Authorization failures feed into pattern analysis.</td>
+</tr>
+<tr>
+<td><code>wp.state_change</code> / <code>module.install</code></td>
+<td>WP / D</td>
+<td>Unauthorized software changes trigger security event evaluation.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Auditor-ready narrative:</strong> "Security-relevant signals are processed by the Logystera rule engine, which evaluates events against defined detection rules. Rules classify events by severity and trigger alerts that route to the appropriate response team. The rule engine evaluates authentication anomalies, file integrity changes, unauthorized software modifications, and access control violations."</p>
+<hr />
+<h4 id="cc74-incident-response">CC7.4 — Incident Response</h4>
+<p><strong>Control requirement.</strong> The entity responds to identified security incidents by executing a defined incident response program.</p>
+<p><strong>What auditors ask for:</strong></p>
+<ul>
+<li>Documented incident response plan</li>
+<li>Evidence of incident response execution (communication, containment, remediation)</li>
+<li>Post-incident review documentation</li>
+</ul>
+<p><strong>CMS signals that support incident response (forensic evidence):</strong></p>
+<p>All CMS signals serve as forensic evidence during incident response. Key signals for investigation:</p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>CMS</th>
+<th>Forensic value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>http.request</code></td>
+<td>WP + D</td>
+<td>Request timeline reconstruction. Correlate via <code>request_id</code>.</td>
+</tr>
+<tr>
+<td><code>auth.*</code></td>
+<td>WP + D</td>
+<td>Authentication timeline — when was the account compromised?</td>
+</tr>
+<tr>
+<td><code>config.save</code> / <code>wp.state_change</code></td>
+<td>D / WP</td>
+<td>What did the attacker change? Configuration and software modification timeline.</td>
+</tr>
+<tr>
+<td><code>wp.integrity</code></td>
+<td>WP</td>
+<td>When were critical files modified?</td>
+</tr>
+<tr>
+<td><code>rest.request</code> / <code>api.access</code></td>
+<td>WP / D</td>
+<td>API abuse timeline.</td>
+</tr>
+<tr>
+<td><code>user.role_changed</code> / <code>user.created</code></td>
+<td>D</td>
+<td>Privilege escalation and backdoor account creation timeline.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="cc8-change-management">CC8 — Change Management</h3>
+<h4 id="cc81-changes-to-infrastructure-data-software-and-procedures">CC8.1 — Changes to Infrastructure, Data, Software, and Procedures</h4>
+<p><strong>Control requirement.</strong> The entity authorizes, designs, develops or acquires, configures, documents, tests, approves, and implements changes to infrastructure, data, software, and procedures to meet its objectives.</p>
+<p><strong>What auditors ask for:</strong></p>
+<ul>
+<li>Change management tickets with approval, testing, and deployment evidence</li>
+<li>Logs showing what changed, when, and who authorized it</li>
+<li>Evidence of separation between development and production</li>
+</ul>
+<p><strong>CMS signals that satisfy this:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>CMS</th>
+<th>Evidence provided</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>wp.state_change</code></td>
+<td>WP</td>
+<td>All software lifecycle events: <code>plugin_activated</code>, <code>plugin_deactivated</code>, <code>theme_switched</code>, <code>core_updated</code>, <code>plugin_updated</code>, <code>theme_updated</code>. Timestamp and request context for each.</td>
+</tr>
+<tr>
+<td><code>module.install</code> / <code>module.uninstall</code></td>
+<td>D</td>
+<td>Module changes with <code>is_syncing</code> flag distinguishing manual changes from config sync (deployment pipeline).</td>
+</tr>
+<tr>
+<td><code>config.save</code> / <code>config.delete</code></td>
+<td>D</td>
+<td>Every configuration change with actor, category, and change type.</td>
+</tr>
+<tr>
+<td><code>config.import</code></td>
+<td>D</td>
+<td>Configuration sync operations (typical deployment mechanism). Actor and timestamp prove the deployment event.</td>
+</tr>
+<tr>
+<td><code>wp.environment</code> / <code>drupal.environment</code></td>
+<td>WP / D</td>
+<td>Before/after software inventory snapshots with <code>changed</code> flag. Proves the change was applied and the resulting state.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Auditor-ready narrative:</strong> "Every software change in the CMS is logged with the type of change (install, update, activate, deactivate, remove), the affected component, and the actor. Configuration changes are tracked at the individual configuration object level with actor attribution. Drupal distinguishes between manual changes and config-sync deployments via the <code>is_syncing</code> flag, proving changes followed the deployment pipeline. Periodic environment snapshots provide point-in-time proof of the software inventory."</p>
+<p><strong>Gap note:</strong> CMS signals capture the <em>execution</em> of changes. The approval and testing evidence (peer review, QA sign-off) typically lives in version control and CI/CD systems. Logystera signals prove <em>what</em> changed and <em>when</em> in production; pair with Git history and deployment pipeline logs for the full CC8.1 evidence chain.</p>
+<hr />
+<h2 id="nist-800-53-rev-5">NIST 800-53 Rev. 5</h2>
+<h3 id="ac-access-control">AC — Access Control</h3>
+<h4 id="ac-2-account-management">AC-2 — Account Management</h4>
+<p><strong>Control requirement.</strong> Create, enable, modify, disable, and remove accounts in accordance with policy. Monitor the use of accounts. Review accounts for compliance with account management requirements.</p>
+<p><strong>What auditors/assessors ask for:</strong></p>
+<ul>
+<li>Evidence of account lifecycle management (creation, modification, disabling, removal)</li>
+<li>Account review documentation (periodic reviews of active accounts)</li>
+<li>Automated notifications for account lifecycle events</li>
+</ul>
+<p><strong>CMS signals:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>CMS</th>
+<th>Evidence provided</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>user.created</code></td>
+<td>D</td>
+<td>Account creation with actor, roles, timestamp.</td>
+</tr>
+<tr>
+<td><code>user.role_changed</code></td>
+<td>D</td>
+<td>Account modification with complete before/after role diff.</td>
+</tr>
+<tr>
+<td><code>user.blocked</code></td>
+<td>D</td>
+<td>Account disabling with actor and timestamp.</td>
+</tr>
+<tr>
+<td><code>user.deleted</code></td>
+<td>D</td>
+<td>Account removal with actor and timestamp.</td>
+</tr>
+<tr>
+<td><code>auth.login</code> / <code>auth.attempt</code></td>
+<td>D / WP</td>
+<td>Account usage monitoring — last login timestamps, frequency.</td>
+</tr>
+<tr>
+<td><code>auth.login_failed</code></td>
+<td>D / WP</td>
+<td>Failed access attempts on accounts (potential unauthorized use).</td>
+</tr>
+</tbody>
+</table>
+<p><strong>AC-2 enhancement (7) — Privileged accounts.</strong> The <code>auth.login</code> signal from Drupal includes the <code>roles</code> array, enabling the processor to flag privileged account usage (accounts with <code>administrator</code> role). The <code>user.role_changed</code> signal tracks privilege escalation.</p>
+<hr />
+<h4 id="ac-6-least-privilege">AC-6 — Least Privilege</h4>
+<p><strong>Control requirement.</strong> Employ the principle of least privilege, allowing only authorized accesses for users which are necessary to accomplish assigned tasks.</p>
+<p><strong>What assessors ask for:</strong></p>
+<ul>
+<li>Evidence that users have only the minimum access necessary</li>
+<li>Logs showing privileged actions and who performed them</li>
+<li>Evidence of privilege escalation detection</li>
+</ul>
+<p><strong>CMS signals:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>CMS</th>
+<th>Evidence provided</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>user.role_changed</code></td>
+<td>D</td>
+<td>Privilege changes with <code>roles_added</code>/<code>roles_removed</code>. Proves roles are actively managed.</td>
+</tr>
+<tr>
+<td><code>auth.login</code> (with roles)</td>
+<td>D</td>
+<td>Point-in-time role snapshot at login. Enables periodic least-privilege review.</td>
+</tr>
+<tr>
+<td><code>http.request</code> (is_admin)</td>
+<td>WP + D</td>
+<td>Tracks admin-area access by user. Identifies users accessing administrative functions.</td>
+</tr>
+<tr>
+<td><code>config.save</code></td>
+<td>D</td>
+<td>Configuration changes attributed to specific actors. Proves only authorized users modify settings.</td>
+</tr>
+<tr>
+<td><code>rest.request</code> / <code>api.access</code></td>
+<td>WP / D</td>
+<td>API access patterns by user. Identifies users with unnecessary API access.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="ac-7-unsuccessful-logon-attempts">AC-7 — Unsuccessful Logon Attempts</h4>
+<p><strong>Control requirement.</strong> Enforce a limit of consecutive invalid logon attempts by a user and automatically lock/delay/disable the account or take other action when the maximum is exceeded.</p>
+<p><strong>What assessors ask for:</strong></p>
+<ul>
+<li>Evidence of account lockout configuration</li>
+<li>Logs showing failed login attempts with count, timing, and source</li>
+<li>Evidence that lockout/throttling was enforced</li>
+</ul>
+<p><strong>CMS signals:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>CMS</th>
+<th>Evidence provided</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>auth.attempt</code> (success: false)</td>
+<td>WP</td>
+<td>Every failed login with HMAC-hashed username, IP, timestamp. Processor derives consecutive failure counts.</td>
+</tr>
+<tr>
+<td><code>auth.login_failed</code></td>
+<td>D</td>
+<td>Failed login with username (plaintext for non-existent accounts), IP.</td>
+</tr>
+<tr>
+<td><code>auth.attempt</code> (success: true)</td>
+<td>WP</td>
+<td>Successful login after failures — proves account was not permanently locked (or was unlocked).</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Auditor-ready narrative:</strong> "Every failed authentication attempt is logged with timestamp, source IP, and hashed user identifier. The Logystera processor evaluates failed login patterns against configurable rules (e.g., N failures within M minutes from same IP or targeting same account) and generates alerts when thresholds are exceeded."</p>
+<hr />
+<h3 id="au-audit-and-accountability">AU — Audit and Accountability</h3>
+<h4 id="au-2-event-logging">AU-2 — Event Logging</h4>
+<p><strong>Control requirement.</strong> Identify the types of events that the system is capable of logging in support of the audit function. Coordinate the event logging function with other organizational entities requiring audit-related information.</p>
+<p><strong>What assessors ask for:</strong></p>
+<ul>
+<li>Documented list of auditable events</li>
+<li>Evidence that the identified events are actually being logged</li>
+<li>Justification for event selection</li>
+</ul>
+<p><strong>CMS signals — complete auditable event inventory:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Event category</th>
+<th>Signals</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Authentication</td>
+<td><code>auth.attempt</code>, <code>auth.login</code>, <code>auth.login_failed</code>, <code>auth.logout</code></td>
+<td>All authentication lifecycle events</td>
+</tr>
+<tr>
+<td>Account management</td>
+<td><code>user.created</code>, <code>user.role_changed</code>, <code>user.blocked</code>, <code>user.deleted</code></td>
+<td>Account lifecycle and privilege changes</td>
+</tr>
+<tr>
+<td>Configuration changes</td>
+<td><code>config.save</code>, <code>config.delete</code>, <code>config.import</code>, <code>config.export</code></td>
+<td>All CMS configuration modifications</td>
+</tr>
+<tr>
+<td>Software changes</td>
+<td><code>wp.state_change</code>, <code>module.install</code>, <code>module.uninstall</code></td>
+<td>Plugin/module/theme/core lifecycle</td>
+</tr>
+<tr>
+<td>File integrity</td>
+<td><code>wp.integrity</code></td>
+<td>Critical file hash monitoring</td>
+</tr>
+<tr>
+<td>Access attempts</td>
+<td><code>http.request</code>, <code>rest.request</code>, <code>api.access</code>, <code>access.denied</code></td>
+<td>All resource access with outcomes</td>
+</tr>
+<tr>
+<td>Malicious input</td>
+<td><code>upload_blocked</code></td>
+<td>Blocked dangerous file uploads</td>
+</tr>
+<tr>
+<td>System health</td>
+<td><code>wp.environment</code>, <code>drupal.environment</code>, <code>drupal.heartbeat</code></td>
+<td>System state snapshots</td>
+</tr>
+<tr>
+<td>Errors</td>
+<td><code>php.warning</code>, <code>php.fatal</code>, <code>php.error</code>, <code>db_error</code>, <code>db.*</code></td>
+<td>Application and database errors</td>
+</tr>
+<tr>
+<td>Content workflow</td>
+<td><code>content.moderation</code>, <code>content.created</code>, <code>content.updated</code>, <code>content.deleted</code></td>
+<td>Content lifecycle (Drupal)</td>
+</tr>
+<tr>
+<td>Scheduled tasks</td>
+<td><code>cron.run</code>, <code>wp.cron</code></td>
+<td>Scheduled task execution and health</td>
+</tr>
+</tbody>
+</table>
+<p>This table itself serves as the AU-2 "auditable events list" artifact.</p>
+<hr />
+<h4 id="au-3-content-of-audit-records">AU-3 — Content of Audit Records</h4>
+<p><strong>Control requirement.</strong> Ensure that audit records contain information that establishes the following: what type of event occurred, when the event occurred, where the event occurred, the source of the event, the outcome of the event, and the identity of any individuals, subjects, or objects associated with the event.</p>
+<p><strong>What assessors ask for (the "who, what, when, where, outcome" test):</strong></p>
+<p>Every audit record must answer these five questions. Here is how CMS signals satisfy each:</p>
+<table>
+<thead>
+<tr>
+<th>Required element</th>
+<th>How CMS signals satisfy it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>What</strong> (event type)</td>
+<td><code>event_type</code> field on every signal (e.g., <code>auth.login</code>, <code>config.save</code>).</td>
+</tr>
+<tr>
+<td><strong>When</strong> (timestamp)</td>
+<td><code>timestamp</code> / <code>created_at</code> field on every signal. Unix epoch, processor-normalized.</td>
+</tr>
+<tr>
+<td><strong>Where</strong> (source)</td>
+<td><code>labels.site.url</code> (WP) or entity context (D). Identifies the specific CMS instance.</td>
+</tr>
+<tr>
+<td><strong>Source</strong> (origin)</td>
+<td><code>labels.actor.ip</code> / <code>ip</code> field. Client IP on every signal. <code>labels.req.ua</code> for user agent.</td>
+</tr>
+<tr>
+<td><strong>Outcome</strong></td>
+<td><code>payload.success</code> (auth), <code>payload.status</code> (HTTP), <code>payload.change_type</code> (config). Signal-type-specific outcome fields.</td>
+</tr>
+<tr>
+<td><strong>Who</strong> (identity)</td>
+<td><code>labels.actor.user_id</code> (WP) or <code>actor_uid</code> / <code>uid</code> (D). HMAC-hashed for privacy, but consistently correlatable.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>AU-3 enhancement (1) — Additional information.</strong> Signals also include: <code>request_id</code> (WP) / <code>event_id</code> (D) for correlation, HTTP method and path, role list at time of action (Drupal <code>auth.login</code>), and before/after state for changes (<code>user.role_changed</code>).</p>
+<hr />
+<h4 id="au-6-audit-record-review-analysis-and-reporting">AU-6 — Audit Record Review, Analysis, and Reporting</h4>
+<p><strong>Control requirement.</strong> Review and analyze system audit records for indications of inappropriate or unusual activity. Report findings to appropriate organizational officials. Adjust the level of audit record review, analysis, and reporting as needed.</p>
+<p><strong>What assessors ask for:</strong></p>
+<ul>
+<li>Evidence of regular log review (automated or manual)</li>
+<li>Alert/rule configuration showing what patterns are monitored</li>
+<li>Sample alerts generated during the audit period</li>
+<li>Evidence that findings were reported and acted upon</li>
+</ul>
+<p><strong>CMS signals role:</strong> All CMS signals feed into the Logystera processor, which applies rule-based detection. The processor's metric definitions and rule DSL serve as the "review and analysis" mechanism. Evidence artifacts include:</p>
+<ul>
+<li>Metric definitions showing which patterns are monitored (stored in <code>definitions</code> table)</li>
+<li>Rule definitions showing alert thresholds and conditions</li>
+<li>Alert history showing triggered rules and their disposition</li>
+<li>Dashboard screenshots showing ongoing monitoring</li>
+</ul>
+<hr />
+<h4 id="au-12-audit-record-generation">AU-12 — Audit Record Generation</h4>
+<p><strong>Control requirement.</strong> Provide audit record generation capability for the events identified in AU-2. Allow designated organizational personnel to select which auditable events are to be logged. Generate audit records containing the information identified in AU-3.</p>
+<p><strong>What assessors ask for:</strong></p>
+<ul>
+<li>Evidence that logging is configurable (can enable/disable specific event types)</li>
+<li>Evidence that logging is active and generating records</li>
+<li>Evidence that generated records meet AU-3 content requirements</li>
+</ul>
+<p><strong>CMS signals role:</strong></p>
+<p>Both the WordPress plugin and Drupal module provide configurable signal selection:</p>
+<ul>
+<li><strong>WordPress:</strong> Hook flags (<code>environment_signals</code>, <code>cron_signals</code>, <code>integrity_signals</code>, <code>hook_timing</code>) control which signal categories are active. Admin UI at Settings &gt; Logystera.</li>
+<li><strong>Drupal:</strong> Config keys per signal type (<code>signals.config_save</code>, <code>signals.auth_login</code>, <code>advanced_signals.content_moderation</code>, etc.) with default on/off states. Admin UI at <code>/admin/config/system/logystera</code>.</li>
+</ul>
+<p>This configuration capability directly satisfies AU-12's "select which auditable events are to be logged" requirement.</p>
+<hr />
+<h3 id="cm-configuration-management">CM — Configuration Management</h3>
+<h4 id="cm-3-configuration-change-control">CM-3 — Configuration Change Control</h4>
+<p><strong>Control requirement.</strong> Determine and document the types of changes to the system that are configuration-controlled. Review proposed changes and approve or disapprove with explicit consideration for security and privacy impact. Document change decisions. Implement only approved changes. Retain records of changes.</p>
+<p><strong>What assessors ask for:</strong></p>
+<ul>
+<li>Change control records with approval, testing, implementation evidence</li>
+<li>Logs showing configuration changes with attribution</li>
+<li>Evidence that unauthorized changes are detected</li>
+</ul>
+<p><strong>CMS signals:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>CMS</th>
+<th>Evidence provided</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>config.save</code> / <code>config.delete</code></td>
+<td>D</td>
+<td>Every configuration object change with name, category, actor, change type. Granular enough to show individual setting changes.</td>
+</tr>
+<tr>
+<td><code>config.import</code></td>
+<td>D</td>
+<td>Bulk configuration deployment with actor. The <code>is_syncing</code> flag on <code>module.install</code> distinguishes pipeline-driven changes from manual ones.</td>
+</tr>
+<tr>
+<td><code>wp.state_change</code></td>
+<td>WP</td>
+<td>Software configuration changes (plugin/theme activation, core updates).</td>
+</tr>
+<tr>
+<td><code>wp.integrity</code></td>
+<td>WP</td>
+<td>Detects unauthorized changes to critical configuration files.</td>
+</tr>
+<tr>
+<td><code>views.change</code></td>
+<td>D</td>
+<td>Views configuration changes (advanced signal).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="cm-6-configuration-settings">CM-6 — Configuration Settings</h4>
+<p><strong>Control requirement.</strong> Establish and document configuration settings for components of the system. Identify, document, and approve any deviations from established configuration settings. Monitor and control changes to the configuration settings.</p>
+<p><strong>What assessors ask for:</strong></p>
+<ul>
+<li>Documented baseline configuration</li>
+<li>Evidence of configuration monitoring</li>
+<li>Logs showing deviations from baseline</li>
+</ul>
+<p><strong>CMS signals:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>CMS</th>
+<th>Evidence provided</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>wp.environment</code> / <code>drupal.environment</code></td>
+<td>WP / D</td>
+<td>Periodic configuration baseline snapshot (versions, installed software, settings). The <code>changed</code> flag detects deviations.</td>
+</tr>
+<tr>
+<td><code>config.save</code></td>
+<td>D</td>
+<td>Real-time configuration change detection with attribution.</td>
+</tr>
+<tr>
+<td><code>wp.integrity</code></td>
+<td>WP</td>
+<td>Critical file configuration integrity monitoring via hash comparison.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="si-system-and-information-integrity">SI — System and Information Integrity</h3>
+<h4 id="si-4-system-monitoring">SI-4 — System Monitoring</h4>
+<p><strong>Control requirement.</strong> Monitor the system to detect attacks, indicators of potential attacks, unauthorized local/network/remote connections, and identify unauthorized use.</p>
+<p><strong>What assessors ask for:</strong></p>
+<ul>
+<li>Evidence of monitoring tools and their configuration</li>
+<li>Alert rules and thresholds</li>
+<li>Sample alerts from the monitoring period</li>
+<li>Evidence that monitoring covers: inbound/outbound traffic, unauthorized access, privilege escalation, malware</li>
+</ul>
+<p><strong>CMS signals:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Monitoring objective</th>
+<th>Signals</th>
+<th>How it satisfies SI-4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Attack detection</td>
+<td><code>auth.login_failed</code>, <code>upload_blocked</code>, <code>access.denied</code></td>
+<td>Failed logins, blocked uploads, and denied access feed brute-force and attack pattern detection rules.</td>
+</tr>
+<tr>
+<td>Unauthorized access</td>
+<td><code>http.request</code> (admin paths by non-admin users), <code>rest.request</code> / <code>api.access</code></td>
+<td>API and admin access monitoring. Processor rules flag access from unexpected roles or IPs.</td>
+</tr>
+<tr>
+<td>Privilege escalation</td>
+<td><code>user.role_changed</code>, <code>user.created</code> (with admin roles)</td>
+<td>New admin account creation and role elevation trigger alerts.</td>
+</tr>
+<tr>
+<td>Malware/unauthorized software</td>
+<td><code>wp.state_change</code>, <code>module.install</code>, <code>wp.integrity</code>, <code>upload_blocked</code></td>
+<td>Software changes, file integrity violations, and blocked malicious uploads.</td>
+</tr>
+<tr>
+<td>System degradation</td>
+<td><code>php.fatal</code>, <code>db_error</code>, <code>memory_near_limit</code>, <code>db.slow_query</code></td>
+<td>Application errors, database failures, and resource exhaustion.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="si-7-software-firmware-and-information-integrity">SI-7 — Software, Firmware, and Information Integrity</h4>
+<p><strong>Control requirement.</strong> Employ integrity verification tools to detect unauthorized changes to software, firmware, and information.</p>
+<p><strong>What assessors ask for:</strong></p>
+<ul>
+<li>Evidence of file integrity monitoring (FIM)</li>
+<li>Logs showing integrity check results</li>
+<li>Evidence of response to integrity violations</li>
+</ul>
+<p><strong>CMS signals:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>CMS</th>
+<th>Evidence provided</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>wp.integrity</code></td>
+<td>WP</td>
+<td>Hash-based integrity monitoring of <code>wp-config.php</code> and <code>.htaccess</code>. Emits old and new hashes when changes are detected. Checked hourly.</td>
+</tr>
+<tr>
+<td><code>wp.environment</code> / <code>drupal.environment</code></td>
+<td>WP / D</td>
+<td>Software inventory with version tracking. Detects unexpected version changes (potential tampering).</td>
+</tr>
+<tr>
+<td><code>wp.state_change</code> (plugin_updated, core_updated)</td>
+<td>WP</td>
+<td>Authorized update events. Enables distinguishing authorized updates from unauthorized file changes.</td>
+</tr>
+<tr>
+<td><code>config.save</code> / <code>config.import</code></td>
+<td>D</td>
+<td>Configuration integrity — every change is attributed to an actor. Unauthorized configuration changes are detectable by correlating actor with expected change windows.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="hipaa-technical-safeguards-45-cfr-164312">HIPAA Technical Safeguards (45 CFR 164.312)</h2>
+<h3 id="164312a1-access-control">164.312(a)(1) — Access Control</h3>
+<p><strong>Standard.</strong> Implement technical policies and procedures for electronic information systems that maintain electronic protected health information (ePHI) to allow access only to those persons or software programs that have been granted access rights.</p>
+<h4 id="a2i-unique-user-identification-required">(a)(2)(i) — Unique User Identification (Required)</h4>
+<p><strong>What auditors ask for:</strong> Evidence that each user has a unique identifier and that all actions are attributable to a specific user.</p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>CMS</th>
+<th>Evidence provided</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>auth.login</code> / <code>auth.attempt</code></td>
+<td>D / WP</td>
+<td>Every authentication tied to a unique user identifier (<code>uid</code> or <code>user_id</code>).</td>
+</tr>
+<tr>
+<td><code>http.request</code></td>
+<td>WP + D</td>
+<td>Every request attributed to a specific <code>actor.user_id</code> or <code>actor_uid</code>.</td>
+</tr>
+<tr>
+<td><code>config.save</code>, <code>user.created</code>, etc.</td>
+<td>D</td>
+<td>All administrative actions include <code>actor_uid</code>.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>HIPAA note:</strong> WordPress signals use integer <code>user_id</code> (0 = anonymous). Drupal signals use HMAC-hashed <code>uid</code>. Both provide unique, consistent user identification across all signal types.</p>
+<h4 id="a2iii-automatic-logoff-addressable">(a)(2)(iii) — Automatic Logoff (Addressable)</h4>
+<p><strong>What auditors ask for:</strong> Evidence of session timeout configuration and enforcement.</p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>CMS</th>
+<th>Evidence provided</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>auth.logout</code></td>
+<td>WP + D</td>
+<td>Session termination events. Proves logout is tracked.</td>
+</tr>
+<tr>
+<td><code>http.request</code> (with timestamps per user)</td>
+<td>WP + D</td>
+<td>Session activity timeline. Processor can derive inactivity gaps.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Gap note:</strong> CMS signals do not directly capture session timeout enforcement (that is a server/application configuration). Signals provide evidence of logout events and session activity patterns. Pair with CMS configuration exports showing session timeout settings.</p>
+<h4 id="a2iv-encryption-and-decryption-addressable">(a)(2)(iv) — Encryption and Decryption (Addressable)</h4>
+<p>Not directly evidenced by CMS audit signals. This is satisfied by infrastructure configuration (TLS, disk encryption).</p>
+<hr />
+<h3 id="164312b-audit-controls-required">164.312(b) — Audit Controls (Required)</h3>
+<p><strong>Standard.</strong> Implement hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic protected health information.</p>
+<p><strong>What auditors ask for:</strong></p>
+<ul>
+<li>Evidence that all access to ePHI systems is logged</li>
+<li>Evidence that logs are reviewed regularly</li>
+<li>Evidence of log integrity (tamper protection)</li>
+<li>Evidence of log retention</li>
+</ul>
+<p><strong>CMS signals — complete coverage:</strong></p>
+<p>This is the core requirement that CMS audit logging directly satisfies. The complete signal set provides:</p>
+<table>
+<thead>
+<tr>
+<th>Audit requirement</th>
+<th>Signals</th>
+<th>Coverage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Authentication logging</td>
+<td><code>auth.*</code> signals</td>
+<td>All login attempts, successes, failures, logouts</td>
+</tr>
+<tr>
+<td>Access logging</td>
+<td><code>http.request</code>, <code>rest.request</code>, <code>api.access</code></td>
+<td>All resource access with actor, path, outcome</td>
+</tr>
+<tr>
+<td>Administrative action logging</td>
+<td><code>config.save</code>, <code>user.*</code>, <code>module.*</code>, <code>wp.state_change</code></td>
+<td>All configuration and administrative changes with actor</td>
+</tr>
+<tr>
+<td>Error and anomaly logging</td>
+<td><code>php.*</code>, <code>db_*</code>, <code>memory_near_limit</code></td>
+<td>Application and database errors</td>
+</tr>
+<tr>
+<td>Integrity monitoring</td>
+<td><code>wp.integrity</code>, <code>wp.environment</code></td>
+<td>File and system integrity checks</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Log integrity.</strong> Signals are HMAC-signed before transmission to the gateway. The Logystera platform stores processed signals in PostgreSQL (durable, append-only for audit purposes) and exposes metrics via VictoriaMetrics (time-series with configurable retention).</p>
+<p><strong>Log review.</strong> Logystera's rule engine provides automated review. Dashboard access and alert history provide evidence of regular review.</p>
+<hr />
+<h3 id="164312c1-integrity-required">164.312(c)(1) — Integrity (Required)</h3>
+<p><strong>Standard.</strong> Implement policies and procedures to protect electronic protected health information from improper alteration or destruction.</p>
+<h4 id="c2-mechanism-to-authenticate-electronic-protected-health-information-addressable">(c)(2) — Mechanism to Authenticate Electronic Protected Health Information (Addressable)</h4>
+<p><strong>What auditors ask for:</strong> Evidence that data integrity is verified (checksums, hashes, digital signatures).</p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>CMS</th>
+<th>Evidence provided</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>wp.integrity</code></td>
+<td>WP</td>
+<td>File integrity verification via SHA hash comparison. Detects unauthorized modification of critical files.</td>
+</tr>
+<tr>
+<td><code>config.save</code> / <code>config.delete</code></td>
+<td>D</td>
+<td>Configuration change attribution. Every modification has an actor and timestamp, enabling detection of unauthorized changes.</td>
+</tr>
+<tr>
+<td><code>content.moderation</code></td>
+<td>D</td>
+<td>Content state transitions are logged with actor. Proves content changes follow workflow.</td>
+</tr>
+<tr>
+<td><code>content.created</code> / <code>content.updated</code> / <code>content.deleted</code></td>
+<td>D</td>
+<td>Complete content lifecycle audit trail.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="164312d-person-or-entity-authentication-required">164.312(d) — Person or Entity Authentication (Required)</h3>
+<p><strong>Standard.</strong> Implement procedures to verify that a person or entity seeking access to electronic protected health information is the one claimed.</p>
+<p><strong>What auditors ask for:</strong> Evidence of authentication mechanisms and their enforcement.</p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>CMS</th>
+<th>Evidence provided</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>auth.attempt</code> / <code>auth.login</code> / <code>auth.login_failed</code></td>
+<td>WP / D</td>
+<td>Complete authentication trail. Proves authentication is required and enforced for all access.</td>
+</tr>
+<tr>
+<td><code>auth.login</code> (with roles)</td>
+<td>D</td>
+<td>Authentication includes role verification — proves identity is verified before access is granted.</td>
+</tr>
+<tr>
+<td><code>http.request</code> (user_id = 0 vs. authenticated)</td>
+<td>WP + D</td>
+<td>Distinguishes authenticated from anonymous requests. Proves authentication enforcement.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="cross-framework-summary-signals-by-compliance-value">Cross-Framework Summary: Signals by Compliance Value</h2>
+<p>This table ranks CMS signals by how many controls they provide evidence for across all three frameworks.</p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>Controls evidenced</th>
+<th>Primary compliance value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>auth.attempt</code> / <code>auth.login</code> / <code>auth.login_failed</code></td>
+<td>CC6.1, CC6.6, CC7.2, CC7.3, AC-2, AC-7, AU-2, AU-3, AU-12, SI-4, 164.312(a), 164.312(b), 164.312(d)</td>
+<td><strong>Authentication and access control</strong> — the single most valuable signal category for compliance</td>
+</tr>
+<tr>
+<td><code>http.request</code></td>
+<td>CC6.1, CC7.2, AC-6, AU-2, AU-3, SI-4, 164.312(a), 164.312(b)</td>
+<td><strong>Access monitoring</strong> — proves all resource access is logged with actor attribution</td>
+</tr>
+<tr>
+<td><code>config.save</code> / <code>config.delete</code></td>
+<td>CC7.1, CC8.1, CM-3, CM-6, AU-2, SI-4, 164.312(b), 164.312(c)</td>
+<td><strong>Configuration integrity</strong> — proves all changes are tracked and attributed</td>
+</tr>
+<tr>
+<td><code>user.created</code> / <code>user.role_changed</code> / <code>user.blocked</code> / <code>user.deleted</code></td>
+<td>CC6.2, CC6.3, AC-2, AC-6, AU-2, SI-4, 164.312(a), 164.312(b)</td>
+<td><strong>Account lifecycle</strong> — proves provisioning, privilege changes, and deprovisioning are logged</td>
+</tr>
+<tr>
+<td><code>wp.state_change</code> / <code>module.install</code> / <code>module.uninstall</code></td>
+<td>CC6.8, CC7.1, CC8.1, CM-3, AU-2, SI-4, SI-7</td>
+<td><strong>Software change management</strong> — proves all software changes are tracked</td>
+</tr>
+<tr>
+<td><code>wp.environment</code> / <code>drupal.environment</code></td>
+<td>CC6.8, CC7.1, CM-6, AU-2, SI-7, 164.312(b)</td>
+<td><strong>Configuration baseline</strong> — periodic inventory proving system state</td>
+</tr>
+<tr>
+<td><code>wp.integrity</code></td>
+<td>CC6.8, CC7.1, CC7.3, SI-4, SI-7, 164.312(c)</td>
+<td><strong>File integrity monitoring</strong> — detects unauthorized modification</td>
+</tr>
+<tr>
+<td><code>rest.request</code> / <code>api.access</code></td>
+<td>CC6.1, CC6.6, AC-6, AU-2, SI-4, 164.312(b)</td>
+<td><strong>API access monitoring</strong> — proves programmatic access is separately logged</td>
+</tr>
+<tr>
+<td><code>upload_blocked</code></td>
+<td>CC6.6, CC6.8, CC7.3, SI-4</td>
+<td><strong>Input validation</strong> — proves malicious input is blocked and logged</td>
+</tr>
+<tr>
+<td><code>auth.logout</code></td>
+<td>CC6.1, AU-2, 164.312(a)</td>
+<td><strong>Session management</strong> — proves session lifecycle is tracked</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="gaps-and-complementary-evidence-sources">Gaps and Complementary Evidence Sources</h2>
+<p>CMS audit signals are strong evidence for <em>execution-level</em> controls but do not cover every control requirement in isolation. Common gaps and how to fill them:</p>
+<table>
+<thead>
+<tr>
+<th>Gap</th>
+<th>Controls affected</th>
+<th>Complementary evidence source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Access approval workflow</td>
+<td>CC6.2, CC6.3, AC-2</td>
+<td>Ticketing system (Jira, ServiceNow) showing request-and-approval before account creation</td>
+</tr>
+<tr>
+<td>Change approval and testing</td>
+<td>CC8.1, CM-3</td>
+<td>Git history (peer review), CI/CD pipeline logs (test results), deployment approvals</td>
+</tr>
+<tr>
+<td>Network boundary controls</td>
+<td>CC6.6, SI-4</td>
+<td>Firewall/WAF logs, VPC flow logs, Cloudflare analytics</td>
+</tr>
+<tr>
+<td>Encryption at rest/in transit</td>
+<td>CC6.1, 164.312(a)(2)(iv), 164.312(e)</td>
+<td>Infrastructure configuration (TLS settings, disk encryption), cloud provider certifications</td>
+</tr>
+<tr>
+<td>Session timeout configuration</td>
+<td>164.312(a)(2)(iii)</td>
+<td>CMS configuration exports, server configuration</td>
+</tr>
+<tr>
+<td>Physical access controls</td>
+<td>CC6.4, CC6.5</td>
+<td>Cloud provider SOC 2 report (AWS, GCP, Azure)</td>
+</tr>
+<tr>
+<td>Incident response plan</td>
+<td>CC7.4</td>
+<td>Written IRP document, tabletop exercise records</td>
+</tr>
+<tr>
+<td>Backup and recovery</td>
+<td>CC7.5</td>
+<td>Backup configuration, recovery test results</td>
+</tr>
+<tr>
+<td>Vulnerability scanning</td>
+<td>CC7.1</td>
+<td>Scanner reports (Nessus, Qualys), dependency audit results</td>
+</tr>
+<tr>
+<td>Log retention and integrity</td>
+<td>AU-11, 164.312(b)</td>
+<td>Logystera platform configuration showing retention period, PostgreSQL backup policy</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="implementation-checklist">Implementation Checklist</h2>
+<p>For maximum compliance coverage from CMS audit signals, ensure these signal categories are enabled:</p>
+<h3 id="wordpress-plugin-minimum-for-compliance">WordPress Plugin — Minimum for Compliance</h3>
+<table>
+<thead>
+<tr>
+<th>Hook flag</th>
+<th>Default</th>
+<th>Required for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Core signals (auth, http, state_change)</td>
+<td>ON</td>
+<td>All frameworks — non-negotiable</td>
+</tr>
+<tr>
+<td><code>environment_signals</code></td>
+<td>ON</td>
+<td>CC7.1, CM-6, SI-7, 164.312(b)</td>
+</tr>
+<tr>
+<td><code>integrity_signals</code></td>
+<td>ON</td>
+<td>CC6.8, SI-7, 164.312(c)</td>
+</tr>
+<tr>
+<td><code>cron_signals</code></td>
+<td>ON</td>
+<td>CC7.2 (system health monitoring)</td>
+</tr>
+<tr>
+<td><code>hook_timing</code></td>
+<td>OFF</td>
+<td>CC7.2 (performance anomaly detection) — enable if performance monitoring is in audit scope</td>
+</tr>
+</tbody>
+</table>
+<h3 id="drupal-module-minimum-for-compliance">Drupal Module — Minimum for Compliance</h3>
+<table>
+<thead>
+<tr>
+<th>Config key</th>
+<th>Default</th>
+<th>Required for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>signals.auth_login</code></td>
+<td>ON</td>
+<td>All frameworks</td>
+</tr>
+<tr>
+<td><code>signals.auth_login_failed</code></td>
+<td>ON</td>
+<td>AC-7, CC6.1, CC6.6, CC7.2</td>
+</tr>
+<tr>
+<td><code>signals.auth_logout</code></td>
+<td>ON</td>
+<td>CC6.1, 164.312(a)</td>
+</tr>
+<tr>
+<td><code>signals.config_save</code></td>
+<td>ON</td>
+<td>CC7.1, CC8.1, CM-3, CM-6</td>
+</tr>
+<tr>
+<td><code>signals.config_delete</code></td>
+<td>ON</td>
+<td>CC7.1, CM-3</td>
+</tr>
+<tr>
+<td><code>signals.config_import</code></td>
+<td>ON</td>
+<td>CC8.1, CM-3</td>
+</tr>
+<tr>
+<td><code>signals.user_created</code></td>
+<td>ON</td>
+<td>CC6.2, AC-2, 164.312(a)</td>
+</tr>
+<tr>
+<td><code>signals.user_updated</code> (role_changed, blocked)</td>
+<td>ON</td>
+<td>CC6.3, AC-2, AC-6</td>
+</tr>
+<tr>
+<td><code>signals.user_deleted</code></td>
+<td>ON</td>
+<td>CC6.3, AC-2</td>
+</tr>
+<tr>
+<td><code>signals.module_install</code></td>
+<td>ON</td>
+<td>CC6.8, CC8.1, SI-7</td>
+</tr>
+<tr>
+<td><code>signals.module_uninstall</code></td>
+<td>ON</td>
+<td>CC6.8, CC8.1</td>
+</tr>
+<tr>
+<td><code>signals.page_visit</code> (http.request)</td>
+<td>ON</td>
+<td>CC6.1, AU-3, SI-4, 164.312(b)</td>
+</tr>
+<tr>
+<td><code>advanced_signals.content_moderation</code></td>
+<td>OFF</td>
+<td>164.312(c) — enable if CMS manages ePHI content</td>
+</tr>
+<tr>
+<td><code>advanced_signals.api_access</code></td>
+<td>OFF</td>
+<td>CC6.6, SI-4 — enable if API access is in audit scope</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://us.aicpa.org/interestareas/frc/assuranceadvisoryservices/trustservicescriteria">AICPA Trust Services Criteria (2017)</a></li>
+<li><a href="https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final">NIST SP 800-53 Rev. 5</a></li>
+<li><a href="https://www.law.cornell.edu/cfr/text/45/164.312">45 CFR 164.312 — HIPAA Technical Safeguards</a></li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/logystera" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.expand", "navigation.top", "navigation.sections", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

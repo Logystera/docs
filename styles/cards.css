@@ -1,0 +1,36 @@
+/* Card grid */
+.md-typeset .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+/* Single card */
+.md-typeset .card {
+  padding: 1.2rem 1.4rem;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid #e5e9f0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: all 0.18s ease-in-out;
+}
+
+/* Hover */
+.md-typeset .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  border-color: #d0d7e2;
+}
+
+/* Dark mode */
+[data-md-color-scheme="slate"] .card {
+  background: #1c1e23;
+  border-color: #2e343b;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+}
+
+[data-md-color-scheme="slate"] .card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+  border-color: #3d444c;
+}
